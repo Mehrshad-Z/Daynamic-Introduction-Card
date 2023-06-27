@@ -1,0 +1,126 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    font-family:"Source Sans Pro" ;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-container{
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.card{
+    width: 350px;
+    height: 170px;
+    border-radius: 5px;
+    background-color: rgb(240, 240, 240);
+    color: rgb(26, 26, 26);
+    box-shadow: 0 5px 15px -3px gray;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+.efect-box{
+    background: linear-gradient(to right , rgba(34, 34, 34, 0.932),rgba(34, 34, 34, 0.801),rgba(34, 34, 34, 0.612),rgba(34, 34, 34, 0.406),rgba(34, 34, 34, 0.218),rgba(0, 0, 0, 0));
+    width: 190px;
+    height: 100%;
+    padding: 5px 12px;
+    transform: translateX(-190px);
+    transition: all 0.7s;
+}
+.card:hover .efect-box{
+    transform: translateX(0px);
+}
+.name{
+    color: rgb(0, 0, 0);
+}
+.job{
+    color: rgb(181, 164, 102);
+}
+.contact{
+    display: flex;
+    gap: 10px;
+    margin: auto;
+    font-size: 21px;
+    transform: translateY(120px);
+    transition: all 0.7s 0.4s;
+}
+.contact a{
+    color: rgb(213, 213, 213);
+}
+.fa-telegram{
+    transition: all 0.7s 0.3s;
+}
+.card:hover .fa-telegram{
+    transform: translateY(-38px) ;
+}
+.fa-linkedin{
+    transition: all 0.7s 0.5s;
+}
+.card:hover .fa-linkedin{
+    transform: translateY(-38px) ;
+}
+.fa-github{
+    transition: all 0.7s 0.7s;
+}
+.card:hover .fa-github{
+    transform: translateY(-38px) ;
+}
+
+/*you can use fontawesome or svg icon for this section*/
+.avatar{
+    margin: 5px 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: rgb(220, 220, 220);
+    box-shadow: 0 5px 15px -2px gray;
+}
+.avatar-input-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;  
+}
+#avatar-input{
+    display: none;
+}
+.avatar-icon{
+    width: 100%;
+    height: 100%;
+    padding: 70px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}   
+.avatar-head{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgba(105, 105, 105, 0.716);
+    flex-shrink: 0;
+}
+.avatar-body{
+    background-color: rgba(105, 105, 105, 0.711);
+    width: 90px;
+    height: 80px;
+    border-radius: 40%;
+    flex-shrink: 0;
+}
